@@ -1,0 +1,24 @@
+print("Welcome to Tresure Island.")
+print("Your mission is to survive and to find the treasure.")
+cross_road=input('Your at a cross road. Where do you want to go? Type "left" or "right".\n')
+if cross_road=="left".lower():
+    water=input('you come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim to swim across.\n')
+    if water=="swim".lower():
+        print("You have jumped into a pool of shark and died.")
+    if water=="wait".lower():
+        boat=print("You have arrived at the island safe and unarmed.")
+        castle=input('Standing infront of castle door. Type "Yes" if you would like to proceed or "No"\n')
+        if castle=="No".lower():
+            print("The adventure has decided to be coward and went home")
+        if castle=="yes".lower():
+            fight=input("You have seen two room in front of you, do you want to go left or right.\n")
+            if fight=="left".lower():
+                    print("You have enter a room full of beast and die.")
+            if fight=="right".lower():
+                    print("You have enter the Boss Dungeon, being underlevel and being blinded by greed. GAME OVER")
+if cross_road=="right".lower():
+    Die=input('You came across a knight guarding a path? Do you want to "fight" the knight or "talk"?\n')
+    if Die=="fight".lower():
+        print("The knight has struck you and were killed!")
+    if Die=="talk".lower():
+        print("The knight is an undead, so you still die.")
